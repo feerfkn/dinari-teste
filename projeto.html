@@ -20,7 +20,7 @@
 					<form>
 						<div class="form-group">
 							<label for="nome">Nome:</label>
-							<input class="form-control" type="text" name="nome" id="nome" placeholder="Nome">
+							<input class="form-control" type="text" name="nome" id="nome" placeholder="Nome" required>
 						</div>
 						
 						<div class="form-group">
@@ -40,23 +40,23 @@
 						
 						<div class="form-group">
 							<label for="cpf">CPF:</label>
-							<input class="form-control" type="text" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00');" placeholder="CPF">
+							<input class="form-control" type="text" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00');" placeholder="CPF" required>
 						</div>
 					
 						<div class="form-group">
 							<label for="data-de-nascimento">Data de Nascimento</label>
-							<input class="form-control" type="text" name="data-de-nascimento" id="data-de-nascimento" onkeypress="$(this).mask('00/00/0000')" placeholder="Data de Nascimento">
+							<input class="form-control" type="text" name="data-de-nascimento" id="data-de-nascimento" onkeypress="$(this).mask('00/00/0000')" placeholder="Data de Nascimento" required>
 						</div>
 						
 						Gênero
 					
 						<div class="form-group">
 							<div class="form-check form-check-inline">
-								<input type="radio" class="form-check-input" id="feminino" name="genero" value="feminino">
+								<input type="radio" class="form-check-input" id="feminino" name="genero" value="feminino" required>
 								<label for="feminino">Feminino</label>							
 							</div>
 							<div class="form-check form-check-inline">
-								<input type="radio" class="form-check-input"  id="masculino" name="genero" value="masculino">
+								<input type="radio" class="form-check-input"  id="masculino" name="genero" value="masculino" required>
 								<label for="masculino">Masculino</label>
 							</div>
 						</div>

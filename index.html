@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="charset" content="utf-8" />
+		<title>Teste Dinari Pay</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/additional-methods.min.js"></script>
+		<script type="text/javascript" src="js/localization/messages_pt_BR.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="offset-lg-3 col-12 col-lg-6">
+					<div class="jumbotron jumbotron-fluid">
+						<h1 class="display-4">Contato</h1>
+						<p class="lead">Formulário de cadastro desenvolvido com Bootstrap, Javascript, jQuery, jQuery Mask e jQuery Validate.</p>
+					</div>
+					<form id="formCadastro">
+						<div class="form-group">
+							<label for="nome">Nome:</label>
+							<input class="form-control" type="text" name="nome" id="nome" placeholder="Nome" required>
+						</div>
+
+						<div class="form-group error">
+							<label for="cpf">CPF:</label>
+							<input class="form-control" type="text" name="cpf" id="cpf" onkeypress="$(this).mask('000.000.000-00');" placeholder="CPF" required>
+						</div>
+						
+						<div class="form-group">
+							<label for="email">E-mail:</label>
+							<input class="form-control" type="email" name="email" id="email" placeholder="e-mail" required>
+						</div>
+
+						<div class="form-group">
+							<label for="dataNascimento">Data de Nascimento</label>
+							<input class="form-control" type="date" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" required>
+						</div>
+						
+						
+						<div class="form-group">
+							<legend class="col-form-label pl-0">Gênero</legend>
+							<div class="form-check-inline">
+								<input type="radio" class="form-check-input" id="feminino" name="genre" value="feminino" required>
+								<label for="feminino">Feminino</label>							
+							</div>
+							<div class="form-check-inline">
+								<input type="radio" class="form-check-input"  id="masculino" name="genre" value="masculino" required>
+								<label for="masculino">Masculino</label>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label for="pass">Senha (8 caracteres min):</label>
+							<input class="form-control" type="password" name="password" id="password" placeholder="Senha" minlength="8" required maxlength="10">
+						</div>
+						
+						<div class="form-group">
+							<label for="pass">Confirmar Senha:</label>
+							<input class="form-control" type="password" name="passwordConfirm" id="passwordConfirm" placeholder="Confirmar Senha" minlength="8" required maxlength="10">
+						</div>
+						<div class="container-alert">
+
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<button type="submit" class="btn btn-info btn-block">Cadastrar</button>
+							</div>
+							<div class="col-6">
+								<button type="reset" class="btn btn-danger btn-block" id="btnCancelar">Cancelar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/script.js"></script>
+</html>
